@@ -1,0 +1,101 @@
+/**
+ * Theme Name:     Twenty Twenty-Three Child
+ * Author:         the WordPress team
+ * Template:       twentytwentythree
+ * Text Domain:	   twenty-twenty-three-child
+ * Description:    Twenty Twenty-Three is designed to take advantage of the new design tools introduced in WordPress 6.1. With a clean, blank base as a starting point, this default theme includes ten diverse style variations created by members of the WordPress community. Whether you want to build a complex or incredibly simple website, you can do it quickly and intuitively through the bundled styles or dive into creation and full customization yourself.
+*/
+
+/*Google Font Import*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+html *{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+}
+h1{
+    font-size: 3.6rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 2.2rem;
+}
+h4{
+    font-size: 1.8rem;
+}
+p, p *{
+    font-size: 1rem;
+}
+
+/*Header Styling*/
+.wp-site-blocks {
+    padding: 0;
+    header{
+        background: brown;
+        .wp-block-group>div{
+            padding:10px 0 !important;
+            a{
+                color:#fff !important;
+            }
+            a:hover{
+                color:#EB4C77 !important;
+                text-decoration: none;
+            }
+        }
+        .wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
+            background-color: brown;
+        }
+        svg {
+            fill: #fff !important;
+        }
+    }
+}
+main,main div{
+    margin-top:0 !important;
+}
+main>div:first-child{
+    display: none !important;
+}
+/*Button Styling*/
+.button a{
+    background-color: #0073aa; 
+    color: #ffffff; 
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    cursor: pointer;
+}
+button a:hover{
+    background-color: #005177 !important; 
+    transform: translateY(-2px);
+}
+
+@media all and (max-width:768px){
+    body .entry-content .is-layout-flex{
+        flex-direction:column;
+    }
+    h1{
+            font-size: 2.6rem;
+    }
+    h2{
+        font-size: 2rem !important;
+        margin-top:0;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    h4{
+        font-size: 1.4rem;
+    }
+    p, p *{
+        font-size: 0.9rem;
+    }
+    .wp-block-spacer {
+        height: 30px !important;
+    }
+}
